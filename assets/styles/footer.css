@@ -1,0 +1,238 @@
+.footer__desktop {
+  /* Component 22 */
+
+  position: absolute;
+  width: 1918px;
+  height: 396px;
+  left: 1px;
+  top: 2363px;
+  background: #313341;
+  display: block;
+}
+.footer__mobile {
+  /* Component 40 */
+
+  position: absolute;
+  width: 375px;
+  height: 411px;
+  left: 0px;
+  top: 2133px;
+  background: #313341;
+  display: none;
+}
+@media (max-width: 768px) {
+  .footer__mobile {
+    display: block;
+  }
+
+  .footer__desktop {
+    display: none;
+  }
+}
+.footer__desktop--logo {
+  /* _2834812530736 */
+
+  position: absolute;
+  left: 17.73%;
+  right: 72.05%;
+  top: 33.08%;
+  bottom: 56.5%;
+}
+.footer__desktop--title {
+  /* Web and machine learningdeveloping company */
+
+  position: absolute;
+  left: 17.73%;
+  right: 72.05%;
+  top: 50.76%;
+  bottom: 38.13%;
+
+  font-family: "Fira Sans Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+.footer__desktop--nav {
+  /* Group 123 */
+
+  position: absolute;
+  left: 36.13%;
+  right: 41.55%;
+  top: 33.08%;
+  bottom: 38.13%;
+}
+.footer__desktop--text {
+  font-family: "Fira Sans Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.footer__desktop--phone_pos {
+  /* +7 499 679 45 79 */
+
+  position: absolute;
+  left: 36.13%;
+  right: 57.92%;
+  top: 33.08%;
+  bottom: 61.36%;
+  width: 130px;
+}
+.footer__desktop--email_pos {
+  /* hello@cyberia.ru */
+
+  position: absolute;
+  left: 36.13%;
+  right: 55.58%;
+  top: 44.44%;
+  bottom: 50%;
+}
+.footer__desktop--adress_pos {
+  /* Аносова 3Б, оф. 1 */
+
+  position: absolute;
+  left: 36.13%;
+  right: 55.68%;
+  top: 56.31%;
+  bottom: 38.13%;
+  width: 170px;
+}
+.footer__desktop--agensy_pos {
+  /* Агентство */
+
+  position: absolute;
+  left: 47.24%;
+  right: 48.85%;
+  top: 33.08%;
+  bottom: 61.36%;
+}
+.footer__desktop--services_pos {
+  /* Услуги */
+
+  position: absolute;
+  left: 47.24%;
+  right: 50.16%;
+  top: 44.44%;
+  bottom: 50%;
+}
+.footer__desktop--cases_pos {
+  /* Кейсы */
+
+  position: absolute;
+  left: 47.24%;
+  right: 50.26%;
+  top: 56.31%;
+  bottom: 38.13%;
+}
+.footer__desktop--blog_pos {
+  /* Блог */
+
+  position: absolute;
+  left: 54.69%;
+  right: 43.43%;
+  top: 33.08%;
+  bottom: 61.36%;
+}
+.footer__desktop--contacts_pos {
+  /* Вопросы */
+
+  position: absolute;
+  left: 54.69%;
+  right: 41.55%;
+  top: 44.44%;
+  bottom: 50%;
+}
+.footer__mobile--logo {
+  /* _2834812530736 */
+
+  position: absolute;
+  left: 36.53%;
+  right: 36.27%;
+  top: 7.3%;
+  bottom: 87.47%;
+}
+.footer__mobile--title {
+  /* Web and machine learning developing company */
+
+  position: absolute;
+  left: 22.4%;
+  right: 22.4%;
+  top: 15.26%;
+  bottom: 75.98%;
+
+  /* Mobile/Основной mob */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+
+  /* EEF3FF */
+  color: #eef3ff;
+}
+.footer__mobile--text {
+  /* Mobile/Основной mob */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+
+  /* EEF3FF */
+  color: #eef3ff;
+}
+.footer__mobile--phone_pos {
+  /* +7 499 679 45 79 */
+
+  position: absolute;
+  left: 8.27%;
+  right: 64.27%;
+  top: 33.27%;
+  bottom: 62.35%;
+}
+.footer__mobile--email_pos {
+  /* hello@cyberia.ru */
+
+  position: absolute;
+  left: 8.27%;
+  right: 57.87%;
+  top: 43.24%;
+  bottom: 52.38%;
+}
+.footer__mobile--adress_pos {
+  /* Аносова 3Б, оф. 1 */
+
+  position: absolute;
+  left: 8.27%;
+  right: 56%;
+  top: 53.22%;
+  bottom: 42.4%;
+}
+.footer__mobile--nav {
+  /* Group 124 */
+
+  position: absolute;
+  left: 48%;
+  right: 8%;
+  top: 33.27%;
+  bottom: 42.4%;
+}
+.footer__mobile--list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 23px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 23px;
+}

@@ -44,7 +44,7 @@ const Navbar = () => {
         <ul>
             <li className='header__text header__mobile--agency_pos'><h1>Агенство</h1></li>
             <li className='header__text header__mobile--services_pos'><h1>Услуги</h1></li>
-            <li className='header__text header__mobile--cases_pos'><Link href='/cases'><h1>Кейсы</h1></Link></li>
+            <li className='header__text header__mobile--cases_pos'><Link href='/cases' onClick={() => setIsMobileMenuOpen(false)} style={{cursor: 'pointer'}}><h1>Кейсы</h1></Link></li>
             <li className='header__text header__mobile--blog_pos'><h1>Блог</h1></li>
             <li className='header__text header__mobile--contacts_pos'><h1>Контакты</h1></li>
           </ul>
