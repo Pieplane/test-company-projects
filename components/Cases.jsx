@@ -5,16 +5,20 @@ import Link from 'next/link'
 import '../assets/styles/cases.css';
 import { useState, useEffect } from 'react';
 import { fetchProjects, fetchCategories } from '@/utils/requests';
+import Spinner from './Spinner';
 
 const Cases = () => {
     const [projects, setProjects] = useState([]);
     const [categories, setCategories] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [filteredProjects, setFilteredProjects] = useState([]);
 
     useEffect(()=>{
         const getProjects = async () => {
             const response = await fetchProjects();
             if(response && response.data){
                 setProjects(response.data.items);
+                setFilteredProjects(response.data.items);
             }
             
         }
@@ -22,14 +26,22 @@ const Cases = () => {
             const response = await fetchCategories();
             if(response && response.data){
                 setCategories(response.data.items);
-            }  
+            }
+            setLoading(false);  
         }
 
         getProjects();
         getCategories();
     }, []);
 
-
+    const handleFilterChange = (categoryId) => {
+        const filtered = projects.filter((project) => project.categories.some((cat) => cat.id === categoryId));
+        setFilteredProjects(filtered);
+      };
+    
+    const resetFilter = () => {
+        setFilteredProjects(projects); // Сброс фильтрации — показываем все проекты
+      };
 
 
   return (
@@ -38,22 +50,23 @@ const Cases = () => {
 
             <section className='cases__desktop--text_nav cases__desktop--main_pos'><Link href='/'>Главная</Link> / Кейсы</section>
 
-            <section className='cases__desktop--text_title cases__desktop--cases_pos'>Кейсы</section>
+            <section className='cases__desktop--text_title cases__desktop--cases_pos' onClick={resetFilter} style={{cursor: 'pointer'}}>Кейсы</section>
 
             <section className='cases__desktop--categories cases__desktop--categories_grid'>
                 {categories.length > 0 ? (
                     categories.map((category) => (
-                        <div key={category.id} className='cases__desktop--categories_item'>
+                        <div key={category.id} className='cases__desktop--categories_item' onClick={() => handleFilterChange(category.id)} style={{ cursor: 'pointer' }}>
                             <div className='cases__desktop--categories_text'>{category.name}</div>
                         </div>
                     ))
-                    ) : <p>Загрузка категорий</p>}
+                    ) : <p></p>}
             </section>
 
             <section className='cases__desktop--projects_container'>
-                <div className='cases__desktop--projects_grid'>
-                    {projects.length > 0 ? (
-                        projects.map((project) => (
+                {loading ? (<Spinner loading={loading} />) :(
+                    <div className='cases__desktop--projects_grid'>
+                    {filteredProjects.length > 0 ? (
+                        filteredProjects.map((project) => (
                     <div className='cases__desktop--projects_item' key={project.id}>
                         <div className="cases__desktop--projects_mask">
                             <div className='cases__desktop--projects_component'>
@@ -69,8 +82,9 @@ const Cases = () => {
                         </div>
                     </div>
                  ))
-                ) : (<p>Загрузка проектов</p>)}
-                </div>
+                ) : (<p></p>)}
+                </div>)}
+                
             </section>
 
 
