@@ -1,0 +1,208 @@
+.feedback__desktop--form {
+  /* Group 631 */
+  position: relative;
+  width: 1240px;
+  height: 639px;
+  left: 341px;
+  top: 650px;
+
+  display: block;
+}
+@media (max-width: 768px) {
+  .header__mobile {
+    display: block;
+  }
+
+  .feedback__desktop--form {
+    display: none;
+  }
+}
+.feedback__desktop--title_text {
+  /* Расскажите о вашем проекте: */
+  position: absolute;
+  left: 0%;
+  right: 70.89%;
+  top: 0%;
+  bottom: 81.85%;
+  /* Desktop/H1 */
+  font-family: "Fira Sans Condensed";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  color: #eff3ff;
+}
+.feedback__desktop--subtract_name {
+  position: absolute; /* Оставляем ваше позиционирование */
+  left: 0%;
+  right: 68.79%;
+  top: 32.08%;
+  bottom: 58.37%;
+}
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.feedback__input {
+  width: 100%; /* Полная ширина инпута относительно контейнера */
+  height: 100%;
+  padding-left: 10px;
+  background-color: transparent; /* Прозрачный фон */
+  color: white; /* Цвет текста */
+  font-family: "Fira Sans Condensed";
+  font-size: 18px; /* Размер шрифта */
+  outline: none; /* Убирает стандартную обводку при фокусе */
+  position: relative; /* Устанавливает позицию относительно родителя */
+  z-index: 1; /* Устанавливает инпут выше других элементов */
+  top: -60px; /* Можете настроить это значение для корректного позиционирования инпута относительно изображения */
+}
+.feedback__textarea--name {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 17.89%;
+  bottom: 30.36%;
+  min-height: 100px; /* Минимальная высота текстовой области */
+  max-height: 300px; /* Максимальная высота текстовой области */
+  padding-left: 10px; /* Отступы внутри текстовой области */
+  background-color: transparent; /* Прозрачный фон */
+  color: white; /* Цвет текста */
+  font-family: "Fira Sans Condensed"; /* Шрифт */
+  font-size: 18px; /* Размер шрифта */
+  outline: none; /* Убирает стандартную обводку при фокусе */
+  resize: none; /* Позволяет изменять размер только по вертикали */
+}
+.feedback__error--message {
+  position: absolute; /* Абсолютное позиционирование внутри инпута */
+  top: 80px; /* Расположение по центру инпута по вертикали */
+  left: 10px; /* Отступ от левого края инпута */
+  width: 400px;
+  transform: translateY(-50%); /* Центрируем сообщение по вертикали */
+  font-family: "Fira Sans Condensed";
+  color: #9aa8ba; /* Цвет текста */
+  font-size: 14px; /* Размер текста сообщения об ошибке */
+  pointer-events: none; /* Отключаем взаимодействие с текстом ошибки */
+  padding: 0 5px; /* Добавляем немного отступа внутри сообщения */
+  border-radius: 4px; /* Закругленные углы для сообщения */
+}
+.feedback__error--message_consent-consent {
+  top: 50px; /* Расположение по центру инпута по вертикали */
+}
+.feedback__consent--wrapper {
+  /* Rectangle 120 */
+  box-sizing: border-box;
+  position: absolute;
+  left: 0%;
+  right: 97.98%;
+  top: 76.06%;
+  bottom: 20.03%;
+  border: 1.5px solid #eff3ff;
+  border-radius: 2px;
+}
+.feedback__desktop--submit_pos {
+  /* Обсудить проект */
+  width: 250px;
+  height: 22px;
+  font-weight: 400;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.feedback__desktop--submit_btn {
+  /* Frame 1009 */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 45px;
+  gap: 10px;
+  position: absolute;
+  left: 38.06%;
+  right: 41.05%;
+  top: 90.3%;
+  bottom: 0%;
+  background: #2d76f9;
+  border-radius: 85px;
+}
+.feedback__desktop--subtract_email {
+  /* Subtract */
+  position: absolute;
+  left: 34.52%;
+  right: 34.27%;
+  top: 32.08%;
+  bottom: 58.37%;
+}
+.feedback__desktop--subtract_phone {
+  /* Subtract */
+  position: absolute;
+  left: 68.79%;
+  right: 0%;
+  top: 32.08%;
+  bottom: 58.37%;
+}
+.feedback__desktop--subtract_message {
+  /* Subtract */
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 47.89%;
+  bottom: 30.36%;
+}
+.feedback__desktop--name_text,
+.feedback__desktop--email_text,
+.feedback__desktop--phone_text,
+.feedback__desktop--message_text,
+.feedback__desktop--consent_text,
+.feedback__desktop--submit_text {
+  font-family: "Fira Sans Condensed";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #eff3ff;
+}
+.feedback__desktop--name_pos {
+  position: absolute;
+  width: 90px;
+  left: 2.74%;
+  right: 90.73%;
+  top: 30.36%;
+  bottom: 66.2%;
+}
+.feedback__desktop--email_pos {
+  /* Email* */
+  position: absolute;
+  left: 37.26%;
+  right: 58.95%;
+  top: 30.36%;
+  bottom: 66.2%;
+}
+.feedback__desktop--phone_pos {
+  /* Телефон* */
+  position: absolute;
+  left: 71.53%;
+  right: 22.58%;
+  top: 30.36%;
+  bottom: 66.2%;
+}
+.feedback__desktop--message_pos {
+  /* Сообщение* */
+  position: absolute;
+  left: 2.74%;
+  right: 89.76%;
+  top: 46.17%;
+  bottom: 50.39%;
+}
+.feedback__desktop--consent_pos {
+  /* Согласие на обработку персональных данных */
+  position: absolute;
+  left: 2.98%;
+  right: 69.11%;
+  top: 76.37%;
+  bottom: 20.19%;
+  width: 446px;
+}

@@ -4,6 +4,16 @@
   position: relative;
   width: 1920px;
   height: 2559px;
+  display: block;
+}
+@media (max-width: 768px) {
+  .header__mobile {
+    display: block;
+  }
+
+  .casses__desktop--page {
+    display: none;
+  }
 }
 
 .cases__desktop--text_nav {

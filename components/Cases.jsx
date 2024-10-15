@@ -6,6 +6,7 @@ import '../assets/styles/cases.css';
 import { useState, useEffect } from 'react';
 import { fetchProjects, fetchCategories } from '@/utils/requests';
 import Spinner from './Spinner';
+import FeedbackForm from './FeedbackForm';
 
 const Cases = () => {
     const [projects, setProjects] = useState([]);
@@ -45,8 +46,7 @@ const Cases = () => {
 
 
   return (
-    <main>
-        <div className='casses__desktop--page'>
+        <main className='casses__desktop--page'>
 
             <section className='cases__desktop--text_nav cases__desktop--main_pos'><Link href='/'>Главная</Link> / Кейсы</section>
 
@@ -87,9 +87,8 @@ const Cases = () => {
                 
             </section>
 
-
-        </div>
-    </main>
+            <FeedbackForm />
+        </main>
     
   )
 }
