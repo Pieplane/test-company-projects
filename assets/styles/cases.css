@@ -6,8 +6,16 @@
   height: 2263px;
   display: block;
 }
+.casses__mobile--page {
+  /* Mobile / Individual_program */
+
+  position: relative;
+  width: 375px;
+  height: 2418px;
+  display: none;
+}
 @media (max-width: 768px) {
-  .header__mobile {
+  .casses__mobile--page {
     display: block;
   }
 
@@ -170,4 +178,176 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.cases__mobile--text_nav {
+  /* Главная / Кейсы */
+
+  position: absolute;
+  left: 6.67%;
+  right: 68.53%;
+  top: 6.05%;
+  bottom: 93.34%;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+
+  /* 9AA8BA */
+  color: #9aa8ba;
+}
+.cases__mobile--text_title {
+  /* Кейсы */
+
+  position: absolute;
+  width: 68px;
+  height: 25px;
+  left: 25px;
+  top: 190px;
+
+  /* Mobile/H1 mobile */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  /* identical to box height */
+
+  /* EEF3FF */
+  color: #eef3ff;
+}
+.cases__mobile--categories {
+  /* Group 1071 */
+
+  position: absolute;
+  width: 335px;
+  height: 83px;
+  left: 26px;
+  top: 262px;
+}
+.cases__mobile--categories_grid {
+  display: flex;
+  flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+
+  gap: 17px; /* Промежуток между элементами */
+  justify-content: flex-start; /* Выравнивание элементов по левому краю */
+  flex-direction: row; /* Горизонтальное размещение элементов */
+}
+
+.cases__mobile--categories_item {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  width: 158.7px; /* Ширина элемента */
+  height: 33px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 29px;
+  gap: 10px;
+
+  background: #2b2d3a;
+  box-shadow: 0px 14px 61px rgba(23, 27, 44, 0.75);
+  border-radius: 7px;
+  cursor: pointer; /* Добавляем курсор, чтобы указать, что элемент кликабелен */
+}
+
+.cases__mobile--categories_text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #eef3ff;
+
+  width: auto; /* Убираем фиксированную ширину */
+  height: auto;
+  flex-grow: 1; /* Позволяем тексту растягиваться при необходимости */
+}
+
+.cases__mobile--projects_container {
+  position: relative;
+  width: 327px;
+  left: 24px;
+  top: 385px;
+}
+
+.cases__mobile--projects_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px; /* расстояние между элементами */
+}
+
+.cases__mobile--projects_item {
+  list-style: none;
+  padding: 0px;
+  width: 327px;
+  height: 320px; /* Фиксированная высота для всех элементов */
+}
+
+.cases__mobile--projects_mask {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Контейнер занимает всю высоту родительского элемента */
+}
+
+.cases__mobile--projects_mask img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Масштабирование изображения без искажений, заполняя контейнер */
+}
+.cases__mobile--item_group {
+  /* Group 35 */
+
+  position: absolute;
+  left: 8.87%;
+  right: 85.93%;
+  top: 65.31%;
+  bottom: 29.38%;
+
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.cases__mobile--item_title {
+  /* Foodzo */
+
+  position: absolute;
+  left: 8.87%;
+  right: 71.56%;
+  top: 77.5%;
+  bottom: 25.94%;
+  width: 124px;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+
+  /* FFFFFF */
+  color: #ffffff;
+}
+.cases__mobile--item_description {
+  /* Онлайн гипермаркет. Для компании были разработаны сайт и мобильное приложение и т.д. */
+
+  position: absolute;
+  left: 8.87%;
+  right: 13.46%;
+  top: 85.94%;
+  bottom: 7.19%;
+  width: 274px;
+
+  /* Mobile/Основной mob */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+
+  /* FFFFFF */
+  color: #ffffff;
 }

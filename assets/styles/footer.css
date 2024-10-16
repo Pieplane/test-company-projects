@@ -1,22 +1,22 @@
 .footer__desktop {
   /* Component 22 */
 
-  position: absolute;
+  position: relative;
   width: 1918px;
   height: 396px;
   left: 1px;
-  top: 2363px;
+  top: 100px;
   background: #313341;
   display: block;
 }
 .footer__mobile {
   /* Component 40 */
 
-  position: absolute;
+  position: relative;
   width: 375px;
   height: 411px;
   left: 0px;
-  top: 2133px;
+  top: 100px;
   background: #313341;
   display: none;
 }

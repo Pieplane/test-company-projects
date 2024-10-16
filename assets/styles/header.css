@@ -126,6 +126,7 @@
   height: 812px;
 
   background: #24252f;
+  z-index: 100;
 }
 .header__mobile--close {
   /* icon / (32x32) / Menu-burger */
