@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import { fetchProjects, fetchCategories } from '@/utils/requests';
 import Spinner from './Spinner';
 import FeedbackForm from './FeedbackForm';
+import FeedbackFormMobile from './FeedbackFormMobile';
 
 const Cases = () => {
     const [projects, setProjects] = useState([]);
@@ -138,7 +139,7 @@ const Cases = () => {
                 </div>)}
                 
             </section>
-
+                <FeedbackFormMobile />
 
 
             </div>

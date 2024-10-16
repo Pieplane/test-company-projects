@@ -8,15 +8,6 @@
 
   display: block;
 }
-@media (max-width: 768px) {
-  .header__mobile {
-    display: block;
-  }
-
-  .feedback__desktop--form {
-    display: none;
-  }
-}
 .feedback__desktop--title_text {
   /* Расскажите о вашем проекте: */
   position: absolute;

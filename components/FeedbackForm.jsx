@@ -22,10 +22,9 @@ const FeedbackForm = () => {
       setShowError(prev => ({ ...prev, [field]: true })); // Показываем ошибку для конкретного поля
     }
   };
-  const formik = useFeedbackFormik();
+  const formik = useFeedbackFormik(false);
   return (
-      <form onSubmit={formik.handleSubmit} className="feedback__desktop--form">
-        
+      <form onSubmit={formik.handleSubmit} className="feedback__desktop--form"> 
         <section className='feedback__desktop--title_text'>
           <h1>Расскажите о вашем проекте:</h1>
         </section>
@@ -126,9 +125,6 @@ const FeedbackForm = () => {
         </h1>
       </button>
     </form>
-
-    
-    
   );
 };
 export default FeedbackForm;

@@ -1,0 +1,209 @@
+.feedback__mobile--form {
+  /* Frame 1012 */
+
+  position: relative;
+  width: 375px;
+  height: 700px;
+  left: 0px;
+  top: 450px;
+}
+.feedback__mobile--logo_group {
+  /* Group 1347 */
+
+  position: absolute;
+  left: 6.4%;
+  right: 73.33%;
+  top: 7.29%;
+  bottom: 82.69%;
+}
+.feedback__mobile--title {
+  /* Расскажите о вашем проекте */
+
+  position: absolute;
+  left: 34.13%;
+  right: 10.93%;
+  top: 8.71%;
+  bottom: 83.29%;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  /* EEF3FF */
+  color: #eef3ff;
+}
+.feedback__mobile--subtract_name {
+  position: absolute;
+  left: 6.4%;
+  right: 6.67%;
+  top: 22%;
+  bottom: 70.57%;
+
+  /* Закругление только левого верхнего угла */
+  border-radius: 8px 8px 8px 8px;
+
+  /* Обводка (можно изменить толщину и цвет) */
+  border: 2px solid #eef3ff;
+
+  /* Убираем фон */
+  background-color: transparent;
+
+  /* Внутренний отступ */
+  padding: 10px;
+}
+.feedback__mobile--subtract_email {
+  /* Group 1192 */
+
+  position: absolute;
+  left: 6.4%;
+  right: 6.67%;
+  top: 32.57%;
+  bottom: 60%;
+  border-radius: 8px 8px 8px 8px;
+  border: 2px solid #eef3ff;
+  background-color: transparent;
+  padding: 10px;
+}
+.feedback__mobile--subtract_phone {
+  /* Group 1191 */
+
+  position: absolute;
+  left: 6.4%;
+  right: 6.67%;
+  top: 43.14%;
+  bottom: 49.43%;
+  border-radius: 8px 8px 8px 8px;
+  border: 2px solid #eef3ff;
+  background-color: transparent;
+  padding: 10px;
+}
+.feedback__mobile--subtract_message {
+  /* Rectangle 1 */
+
+  position: absolute;
+  left: 6.4%;
+  right: 6.67%;
+  top: 53.86%;
+  bottom: 26.29%;
+  border-radius: 8px 8px 8px 8px;
+  border: 2px solid #eef3ff;
+  background-color: transparent;
+  padding: 10px;
+}
+.feedback__mobile--textarea {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 17.89%;
+  bottom: 30.36%;
+  min-height: 100px; /* Минимальная высота текстовой области */
+  max-height: 139px; /* Максимальная высота текстовой области */
+  padding-left: 10px; /* Отступы внутри текстовой области */
+  background-color: transparent; /* Прозрачный фон */
+  color: white; /* Цвет текста */
+  font-family: "Fira Sans Condensed"; /* Шрифт */
+  font-size: 18px; /* Размер шрифта */
+  outline: none; /* Убирает стандартную обводку при фокусе */
+  resize: none; /* Позволяет изменять размер только по вертикали */
+}
+.feedback__mobile--submit {
+  /* Frame 1011 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 45px;
+  gap: 10px;
+
+  position: absolute;
+  left: 6.4%;
+  right: 6.4%;
+  top: 79.71%;
+  bottom: 13.43%;
+
+  /* 2D76F9 */
+  background: #2d76f9;
+  border-radius: 85px;
+}
+.feedback__mobile--submit_text {
+  /* ВСЕ ПРОЕКТЫ */
+
+  width: 77px;
+  height: 18px;
+
+  /* Mobile/Основной mob */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.feedback__mobile--warning {
+  /* Нажимая “Отправить”, Вы даете согласие на обработку персональных данных */
+
+  position: absolute;
+  left: 13.33%;
+  right: 13.6%;
+  top: 90.3%;
+  bottom: 4.56%;
+
+  /* Mobile/Основной mob */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+
+  /* EEF3FF */
+  color: #eef3ff;
+}
+.feedback__mobile--input {
+  width: 100%; /* Полная ширина инпута относительно контейнера */
+  height: 100%;
+  padding-left: 10px;
+  background-color: transparent; /* Прозрачный фон */
+  color: white; /* Цвет текста */
+  font-family: "Fira Sans Condensed";
+  font-size: 18px; /* Размер шрифта */
+  outline: none; /* Убирает стандартную обводку при фокусе */
+  position: relative; /* Устанавливает позицию относительно родителя */
+  z-index: 1; /* Устанавливает инпут выше других элементов */
+}
+.feedback__mobile--error_message {
+  position: absolute; /* Абсолютное позиционирование внутри инпута */
+  top: 60px; /* Расположение по центру инпута по вертикали */
+  left: 10px; /* Отступ от левого края инпута */
+  width: 400px;
+  transform: translateY(-50%); /* Центрируем сообщение по вертикали */
+  font-family: "Fira Sans Condensed";
+  color: #9aa8ba; /* Цвет текста */
+  font-size: 14px; /* Размер текста сообщения об ошибке */
+  pointer-events: none; /* Отключаем взаимодействие с текстом ошибки */
+  padding: 0 5px; /* Добавляем немного отступа внутри сообщения */
+  border-radius: 4px; /* Закругленные углы для сообщения */
+}
+.feedback__mobile--input::placeholder {
+  color: white; /* Цвет текста */
+  font-family: "Fira Sans Condensed";
+  font-size: 16px; /* Размер шрифта */
+}
+.feedback__mobile--textarea::placeholder {
+  color: white; /* Цвет текста */
+  font-family: "Fira Sans Condensed";
+  font-size: 16px; /* Размер шрифта */
+}

@@ -2,21 +2,21 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 
-function useFeedbackFormik() {
+function useFeedbackFormik(isMobile) {
   return useFormik({
     initialValues: {
       name: '',
       email: '',
       phone: '',
       message: '',
-      consent: false
+      ...(isMobile ? {} : { consent: false }),
     },
     validationSchema: Yup.object({
       name: Yup.string().required('Ваше имя обязательно'),
       email: Yup.string().email('Неверный формат email').required('Email обязателен'),
       phone: Yup.string().matches(/^\+?\d{10,15}$/, 'Неверный формат телефона').required('Телефон обязателен'),
       message: Yup.string(),
-      consent: Yup.boolean().oneOf([true], 'Необходимо согласие на обработку персональных данных')
+      ...(isMobile ? {} : { consent: Yup.boolean().oneOf([true], 'Необходимо согласие на обработку персональных данных') }),
     }),
     onSubmit: async (values, { resetForm }) => {
       try {
@@ -31,4 +31,4 @@ function useFeedbackFormik() {
   });
 }
 
-export {useFeedbackFormik};
+export { useFeedbackFormik };
